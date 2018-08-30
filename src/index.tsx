@@ -5,11 +5,11 @@ import './index.scss';
 import registerServiceWorker from './registerServiceWorker';
 import { createStore } from 'redux';
 import { StoreState } from './types/StoreState';
-import { CountAction } from './actions/counter';
 import count from './reducers/count';
 import { Provider } from 'react-redux';
+import { BaseAction } from './actions/base';
 
-const store = createStore<StoreState, CountAction, null, null>(count, { count: 0 });
+const store = createStore<StoreState, BaseAction, null, null>(count, { count: 0 });
 
 ReactDOM.render(
   <Provider store={store}>
