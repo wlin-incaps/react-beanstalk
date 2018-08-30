@@ -1,6 +1,6 @@
 import { StoreState } from "../types/StoreState";
 import Button, { ButtonProps } from "../components/Button";
-import { CountAction, incrementCount, decrementCount } from "../actions/counter";
+import { CountAction, incrementCount, decrementCount } from "../actions/count";
 import { Dispatch } from "redux";
 import { connect } from "react-redux";
 

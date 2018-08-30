@@ -1,5 +1,5 @@
 import { StoreState } from "../types/StoreState";
-import { CountAction } from "../actions/counter";
+import { CountAction } from "../actions/count";
 import { INCREMENT_COUNT, DECREMENT_COUNT } from "../constants/counter";
 
 export default function count(state: StoreState, action: CountAction): StoreState {
